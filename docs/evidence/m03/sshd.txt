@@ -1,0 +1,4 @@
+port 22
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no

@@ -1,0 +1,18 @@
+● cc-m03.service - PTI 2802 M03 Flask Application
+     Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2026-10-16 15:04:02 WIB; 4min 53s ago
+   Main PID: 21062 (gunicorn)
+      Tasks: 3 (limit: 1043)
+     Memory: 28.3M
+        CPU: 251ms
+     CGroup: /system.slice/cc-m03.service
+             ├─21062 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─21066 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+
+Oct 16 15:04:02 cc-m03-2583207073008 systemd[1]: Started PTI 2802 M03 Flask Application.
+Oct 16 15:04:02 cc-m03-2583207073008 gunicorn[21062]: [2026-10-16 15:04:02 +0700] [21062] [INFO] Starting gunicorn 26.2.0
+Oct 16 15:04:02 cc-m03-2583207073008 gunicorn[21062]: [2026-10-16 15:04:02 +0700] [21062] [INFO] Listening at: http://127.0.0.1:8000 (21062)
+Oct 16 15:04:02 cc-m03-2583207073008 gunicorn[21062]: [2026-10-16 15:04:02 +0700] [21062] [INFO] Using worker: gthread
+Oct 16 15:04:02 cc-m03-2583207073008 gunicorn[21066]: [2026-10-16 15:04:02 +0700] [21066] [INFO] Booting worker with pid: 21066
+Oct 16 15:04:03 cc-m03-2583207073008 gunicorn[21062]: [2026-10-16 15:04:03 +0700] [21062] [ERROR] Control server error: [Errno 13] Permission denied: '/home/sitisumyati'
+Oct 16 15:05:54 cc-m03-2583207073008 gunicorn[21066]: 127.0.0.1 - - [16/Oct/2026:15:05:54 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/7.81.0"
