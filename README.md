@@ -4,7 +4,7 @@ Cloud Computing — PTI 2802
 Pertemuan 3 — Project Inception
 
 ## Author
-Siti Sumyati / 2583207073008 / ISI_KELAS
+Siti Sumyati / 2583207073008 / 2B
 
 ## Problem
 Pengelolaan tagihan dan pembayaran syahriyah santri putri Pesantren Hudan masih
